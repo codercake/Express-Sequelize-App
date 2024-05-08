@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Title Extension</title>
+  <style>
+    body {
+      background-color: #f1f5f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      width: 200px;
+      padding: 10px;
+      background-color: #facc15;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e1b82d;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333333;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <button id="getTabTitle">Get your tab title! 😌</button>
+  <p id="tabTitle"></p>
+</body>
+</html>
