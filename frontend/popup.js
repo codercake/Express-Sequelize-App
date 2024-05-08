@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+<<<<<<< HEAD
   document.getElementById('getTabTitle').addEventListener('click', async function () {
       try {
           const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -49,5 +50,20 @@ document.addEventListener('DOMContentLoaded', function () {
       } catch (error) {
           console.error('Error processing profiles:', error);
       }
+=======
+  document.getElementById('getTabTitle').addEventListener('click', function () {
+      var linkedinProfiles = [
+          "https://www.linkedin.com/company/girlscriptsoc/",
+          "https://www.linkedin.com/in/sandeep-jain-/",
+          "https://www.linkedin.com/school/university-of-melbourne/"
+      ];
+
+      // Loop through each LinkedIn profile URL
+      linkedinProfiles.forEach(function (profileUrl) {
+          // Open each LinkedIn profile URL in a new tab
+          chrome.tabs.create({ url: profileUrl }, function (newTab) {
+          });
+      });
+>>>>>>> 1f3dea4b2e10a1f90ef75e3adaed8e342bbdb33d
   });
 });
